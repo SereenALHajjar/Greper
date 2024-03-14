@@ -15,8 +15,9 @@ bool found;
 void SearchInFile(string filepath)
 {
     ifstream file(filepath);
-    if (!file.is_open()) {
-        cout<<RED<< "Unable to open file: " << filepath << " for reading." << endl;
+    if (!file.is_open())
+    {
+        cout << RED << "Unable to open file: " << filepath << " for reading." << endl;
         return;
     }
     string line;
