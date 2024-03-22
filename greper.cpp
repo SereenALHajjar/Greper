@@ -36,7 +36,6 @@ namespace greper
 
         return count;
     }
-
     void Greper::search(const std::string& file_path)
     {
         std::ifstream file(file_path);
