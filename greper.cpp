@@ -111,7 +111,7 @@ namespace greper
         {
             if (entry.is_regular_file())
             {
-                string entry_path = entry.path();
+                string entry_path = entry.path().string();
                 threads.push_back(std::thread(
                     [this, entry_path]()
                     {
@@ -130,7 +130,7 @@ namespace greper
         {
             if (entry.is_regular_file())
             {
-                search(entry.path());
+                search(entry.path().string());
             }
         }
     }
